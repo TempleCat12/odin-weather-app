@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+svg, h3 {
+    color: #fb923c;
+}
+input {
+    flex: 1;
+    background-color: inherit;
+    border: 0;
+    border-bottom: 2px solid #fb923c;
+    color: inherit;
+    font-size: 22px;
+    outline: none;
+}
+input::placeholder{
+    color: #a3a3a3;
+}
+button {
+    font-size: 22px;
+    color: inherit;
+    border: 0;
+    background-color: inherit;
+    transition: transform 0.1s ease;
+}
+button:hover {
+    transform: scale(1.3);
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+li > p {
+    font-size: 22px;
+}
+/* li > p:last-child {
+    color: #fb923c;
+} */
+li::marker {
+    content: '';
+}
+#content {
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji", monospace, 'Courier New', Courier ;
+    /* font-weight: 600; */
+    color: #fff;
+    display: flex;
+    height: 100vh;
+    background: center 100% no-repeat url('./images/cloud.jpg');
+}
+#content > div {
+    padding-top: 60px;
+}
+
+#display {
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    padding-left: 60px;
+}
+#weather {
+    padding: 5px 20px;
+    background-color: rgba(31, 41, 55, 0.5);
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    width: fit-content;
+}
+#weather > p{
+    line-height: 80px;
+    font-size: 80px;
+}
+#weather > div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#weather > div > p:first-child {
+    font-size: 35px;
+    line-height: 35px;
+}
+#menu {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 25vw;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    background-color: rgba(31, 41, 55, 0.5);
+}
+#form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+#detail {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#detail li {
+    display: flex;
+    justify-content: space-between;
+}
